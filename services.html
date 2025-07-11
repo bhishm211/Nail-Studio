@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Nail Services - NailGlam Studio | Manicure, Pedicure & Nail Art</title>
+    <meta name="description" content="Discover our premium nail services including luxury manicures, spa pedicures, custom nail art, and gel extensions. Book your appointment today.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Premium Nail Services - NailGlam Studio">
+    <meta property="og:description" content="Luxury manicures, spa pedicures, custom nail art, and gel extensions by expert nail artists.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.imgur.com/nailglam-services.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium Nail Services - NailGlam Studio">
+    <meta name="twitter:description" content="Luxury manicures, spa pedicures, custom nail art, and gel extensions by expert nail artists.">
+    <meta name="twitter:image" content="https://i.imgur.com/nailglam-services.jpg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'nail-pink': '#EC4899',
+                        'nail-light': '#F9EAF1',
+                        'nail-gold': '#F59E0B',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #EC4899, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-nail-pink to-nail-gold rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">NG</span>
+                    </div>
+                    <h1 class="text-xl font-poppins font-bold text-nail-pink">NailGlam Studio</h1>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">About</a>
+                    <a href="services.html" class="text-nail-pink font-medium">Services</a>
+                    <a href="gallery.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Gallery</a>
+                    <a href="blog.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Blog</a>
+                    <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Contact</a>
+                </div>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300" aria-label="Toggle dark mode">
+                    <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                    <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-br from-nail-light to-pink-50 dark:from-gray-800 dark:to-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-6xl font-poppins font-bold text-gray-900 dark:text-white mb-6">
+                        Premium <span class="gradient-text">Nail Services</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                        Experience luxury nail care with our comprehensive range of professional services.
+                    </p>
+                    <a href="contact.html" class="inline-block px-8 py-3 bg-nail-pink text-white rounded-xl hover:bg-pink-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Manicure Services -->
+                    <div id="manicure" class="mb-20">
+                        <h3 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-12 text-center">Manicure Services</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/classic-manicure.jpg" alt="Classic Manicure" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Classic Manicure</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Traditional nail care with cuticle work, shaping, and polish application.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$35</span>
+                                        <span class="text-sm text-gray-500">45 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/gel-manicure.jpg" alt="Gel Manicure" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Gel Manicure</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Long-lasting gel polish with UV curing for 2-3 weeks of wear.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$45</span>
+                                        <span class="text-sm text-gray-500">60 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/luxury-manicure.jpg" alt="Luxury Spa Manicure" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Luxury Spa Manicure</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Premium treatment with exfoliation, mask, and relaxing hand massage.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$65</span>
+                                        <span class="text-sm text-gray-500">75 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pedicure Services -->
+                    <div id="pedicure" class="mb-20">
+                        <h3 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-12 text-center">Pedicure Services</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/classic-pedicure.jpg" alt="Classic Pedicure" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Classic Pedicure</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Essential foot care with soak, callus removal, and polish.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$40</span>
+                                        <span class="text-sm text-gray-500">50 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/spa-pedicure.jpg" alt="Spa Pedicure" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Spa Pedicure</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Relaxing treatment with sugar scrub, mask, and moisturizing massage.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$55</span>
+                                        <span class="text-sm text-gray-500">70 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/deluxe-pedicure.jpg" alt="Deluxe Pedicure" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Deluxe Pedicure</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Ultimate pampering with hot towels, paraffin wax, and extended massage.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$75</span>
+                                        <span class="text-sm text-gray-500">90 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nail Art Services -->
+                    <div id="nail-art" class="mb-20">
+                        <h3 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-12 text-center">Nail Art Services</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/simple-nail-art.jpg" alt="Simple Nail Art" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Simple Nail Art</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Basic designs like dots, stripes, or simple patterns on gel base.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$15</span>
+                                        <span class="text-sm text-gray-500">+30 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/custom-nail-art.jpg" alt="Custom Nail Art" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Custom Nail Art</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Detailed hand-painted designs tailored to your personal style.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$35</span>
+                                        <span class="text-sm text-gray-500">+60 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/3d-nail-art.jpg" alt="3D Nail Art" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">3D Nail Art</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Sculptural designs with rhinestones, charms, and dimensional elements.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$55</span>
+                                        <span class="text-sm text-gray-500">+90 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extensions Services -->
+                    <div id="extensions" class="mb-20">
+                        <h3 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-12 text-center">Extensions & Enhancements</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/gel-extensions.jpg" alt="Gel Extensions" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Gel Extensions</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Natural-looking extensions using gel overlay for added length and strength.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$85</span>
+                                        <span class="text-sm text-gray-500">120 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/acrylic-extensions.jpg" alt="Acrylic Extensions" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Acrylic Extensions</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Durable acrylic extensions perfect for dramatic length and bold designs.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$75</span>
+                                        <span class="text-sm text-gray-500">105 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/dip-powder.jpg" alt="Dip Powder" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Dip Powder</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Long-lasting color system with strengthening benefits for natural nails.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-nail-pink">$55</span>
+                                        <span class="text-sm text-gray-500">75 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Packages -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h3 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-4">Special Packages</h3>
+                        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                            Save with our curated service packages designed for the ultimate nail care experience.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                            <div class="text-center">
+                                <h4 class="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4">Bridal Package</h4>
+                                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                    Complete bridal nail experience including trial session, wedding day service, and touch-up kit.
+                                </p>
+                                <div class="space-y-2 text-left mb-6">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-nail-pink mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-600 dark:text-gray-300">Trial session (2 weeks before)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-nail-pink mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-600 dark:text-gray-300">Wedding day manicure & pedicure</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-nail-pink mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-600 dark:text-gray-300">Touch-up kit & emergency polish</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <span class="text-3xl font-bold text-nail-pink">$175</span>
+                                    <span class="text-gray-500 line-through ml-2">$200</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                            <div class="text-center">
+                                <h4 class="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4">Monthly Membership</h4>
+                                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                    Monthly subscription for regular nail care with exclusive member benefits and priority booking.
+                                </p>
+                                <div class="space-y-2 text-left mb-6">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-nail-pink mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-600 dark:text-gray-300">2 gel manicures per month</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-nail-pink mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-600 dark:text-gray-300">20% off all additional services</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-nail-pink mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-600 dark:text-gray-300">Priority booking & member events</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <span class="text-3xl font-bold text-nail-pink">$75</span>
+                                    <span class="text-gray-500">/month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Appointment CTA -->
+        <section class="py-20 bg-gradient-to-br from-nail-pink to-pink-600">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h3 class="text-3xl font-poppins font-bold text-white mb-4">Ready to Book Your Appointment?</h3>
+                    <p class="text-pink-100 mb-8">
+                        Experience the luxury of professional nail care. Our expert artists are ready to create your perfect look.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html" class="px-8 py-3 bg-white text-nail-pink rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg font-semibold">
+                            Book Now
+                        </a>
+                        <a href="gallery.html" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-xl hover:bg-white hover:text-nail-pink transform hover:scale-105 transition-all duration-300">
+                            View Gallery
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-nail-pink to-nail-gold rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">NG</span>
+                        </div>
+                        <span class="text-xl font-poppins font-bold">NailGlam Studio</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Premium nail art services with a focus on creativity, quality, and customer satisfaction.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#manicure" class="hover:text-nail-pink transition-colors">Manicures</a></li>
+                        <li><a href="#pedicure" class="hover:text-nail-pink transition-colors">Pedicures</a></li>
+                        <li><a href="#nail-art" class="hover:text-nail-pink transition-colors">Nail Art</a></li>
+                        <li><a href="#extensions" class="hover:text-nail-pink transition-colors">Extensions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-nail-pink transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-nail-pink transition-colors">About</a></li>
+                        <li><a href="gallery.html" class="hover:text-nail-pink transition-colors">Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-nail-pink transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-nail-pink transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors">Instagram</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors">Pinterest</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 NailGlam Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('darkMode', html.classList.contains('dark'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            html.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
