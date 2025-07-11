@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Art Blog - NailGlam Studio | Tips, Trends & Tutorials</title>
+    <meta name="description" content="Discover the latest nail art trends, professional tips, step-by-step tutorials, and expert advice from NailGlam Studio's master nail artists.">
+    <meta name="keywords" content="nail art blog, nail tutorials, nail trends 2024, nail care tips, manicure guide, nail design inspiration">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nail Art Blog - NailGlam Studio | Tips, Trends & Tutorials">
+    <meta property="og:description" content="Discover the latest nail art trends, professional tips, and step-by-step tutorials from expert nail artists.">
+    <meta property="og:type" content="blog">
+    <meta property="og:image" content="https://i.imgur.com/nailglam-blog.jpg">
+    <meta property="og:url" content="https://nailglam-studio.blogspot.com/blog">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nail Art Blog - NailGlam Studio">
+    <meta name="twitter:description" content="Discover the latest nail art trends, professional tips, and step-by-step tutorials from expert nail artists.">
+    <meta name="twitter:image" content="https://i.imgur.com/nailglam-blog.jpg">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "NailGlam Studio Blog",
+        "description": "Professional nail art tips, trends, and tutorials",
+        "url": "https://nailglam-studio.blogspot.com/blog",
+        "publisher": {
+            "@type": "Organization",
+            "name": "NailGlam Studio",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://i.imgur.com/nailglam-logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'nail-pink': '#EC4899',
+                        'nail-light': '#F9EAF1',
+                        'nail-gold': '#F59E0B',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #EC4899, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .blog-card {
+            transition: all 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .tag {
+            display: inline-block;
+            background: #EC4899;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-nail-pink to-nail-gold rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">NG</span>
+                    </div>
+                    <h1 class="text-xl font-poppins font-bold text-nail-pink">NailGlam Studio</h1>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">About</a>
+                    <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Services</a>
+                    <a href="gallery.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Gallery</a>
+                    <a href="blog.html" class="text-nail-pink font-medium">Blog</a>
+                    <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Contact</a>
+                </div>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300" aria-label="Toggle dark mode">
+                    <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                    <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-br from-nail-light to-pink-50 dark:from-gray-800 dark:to-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-6xl font-poppins font-bold text-gray-900 dark:text-white mb-6">
+                        Nail Art <span class="gradient-text">Blog</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                        Discover the latest trends, expert tips, and step-by-step tutorials from professional nail artists.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="tag">Nail Trends 2024</span>
+                        <span class="tag">DIY Tutorials</span>
+                        <span class="tag">Professional Tips</span>
+                        <span class="tag">Nail Care</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-8 text-center">Featured Article</h3>
+                    <article class="bg-gradient-to-r from-nail-light to-pink-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl overflow-hidden shadow-xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                            <div class="order-2 lg:order-1 p-8">
+                                <div class="mb-4">
+                                    <span class="tag">Trending</span>
+                                    <span class="tag">2024 Trends</span>
+                                </div>
+                                <h4 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
+                                    10 Hottest Nail Trends Taking Over 2024
+                                </h4>
+                                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                    From minimalist chrome effects to bold 3D designs, discover the nail art trends that are dominating social media and red carpets this year. Learn how to recreate these stunning looks at home or request them at your next salon visit.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://i.imgur.com/sarah-author.jpg" alt="Sarah Chen" class="w-8 h-8 rounded-full">
+                                        <div>
+                                            <p class="font-semibold text-gray-900 dark:text-white">Sarah Chen</p>
+                                            <p class="text-sm text-gray-500">January 15, 2024</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-nail-pink font-semibold hover:underline">Read More →</a>
+                                </div>
+                            </div>
+                            <div class="order-1 lg:order-2">
+                                <img src="https://i.imgur.com/nail-trends-2024.jpg" alt="2024 Nail Trends" class="w-full h-64 lg:h-full object-cover">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="py-12 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="category-btn active px-6 py-2 rounded-full bg-nail-pink text-white hover:bg-pink-600 transition-colors duration-300" data-category="all">
+                        All Posts
+                    </button>
+                    <button class="category-btn px-6 py-2 rounded-full bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-nail-pink hover:text-white transition-colors duration-300" data-category="tutorials">
+                        Tutorials
+                    </button>
+                    <button class="category-btn px-6 py-2 rounded-full bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-nail-pink hover:text-white transition-colors duration-300" data-category="trends">
+                        Trends
+                    </button>
+                    <button class="category-btn px-6 py-2 rounded-full bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-nail-pink hover:text-white transition-colors duration-300" data-category="tips">
+                        Tips & Care
+                    </button>
+                    <button class="category-btn px-6 py-2 rounded-full bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-nail-pink hover:text-white transition-colors duration-300" data-category="reviews">
+                        Product Reviews
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogGrid">
+                        
+                        <!-- Tutorial Posts -->
+                        <article class="blog-card" data-category="tutorials">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/diy-gel-manicure.jpg" alt="DIY Gel Manicure at Home" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Tutorial</span>
+                                        <span class="tag">DIY</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        Perfect DIY Gel Manicure at Home
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Learn the step-by-step process to achieve salon-quality gel manicures in the comfort of your home. Essential tools, techniques, and expert tips included.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">5 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="tutorials">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/nail-art-dotting.jpg" alt="Nail Art Dotting Techniques" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Tutorial</span>
+                                        <span class="tag">Techniques</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        Mastering Nail Art Dotting Techniques
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Discover various dotting tools and techniques to create stunning patterns, from simple polka dots to complex mandala designs.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">7 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="tutorials">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/french-manicure-variations.jpg" alt="French Manicure Variations" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Tutorial</span>
+                                        <span class="tag">Classic</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        5 Modern French Manicure Variations
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Update the classic French manicure with these contemporary twists. From colored tips to geometric designs, reinvent this timeless look.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">6 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Trend Posts -->
+                        <article class="blog-card" data-category="trends">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/chrome-nails-trend.jpg" alt="Chrome Nails Trend" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Trending</span>
+                                        <span class="tag">2024</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        Chrome Nails: The Mirror Finish Revolution
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Explore the chrome nail trend that's taking over Instagram. Learn about different chrome powders, application techniques, and styling tips.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">4 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="trends">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/minimalist-nail-art.jpg" alt="Minimalist Nail Art" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Trending</span>
+                                        <span class="tag">Minimalist</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        Less is More: Minimalist Nail Art Trends
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Discover the beauty of understated elegance with minimalist nail designs that make a subtle yet sophisticated statement.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">5 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="trends">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/3d-nail-art-trend.jpg" alt="3D Nail Art Trend" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Trending</span>
+                                        <span class="tag">3D Art</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        3D Nail Art: Sculptural Beauty at Your Fingertips
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Explore the world of dimensional nail art with flowers, bows, and abstract sculptures that transform nails into wearable art pieces.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">6 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Tips & Care Posts -->
+                        <article class="blog-card" data-category="tips">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/nail-care-routine.jpg" alt="Nail Care Routine" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Care</span>
+                                        <span class="tag">Health</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        The Ultimate Nail Care Routine for Healthy Nails
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Establish a daily nail care routine that promotes strong, healthy nails. From cuticle care to strengthening treatments, we cover it all.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">8 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="tips">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/nail-breakage-prevention.jpg" alt="Preventing Nail Breakage" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Care</span>
+                                        <span class="tag">Prevention</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        How to Prevent Nail Breakage and Peeling
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Learn the common causes of nail breakage and discover effective strategies to keep your nails strong and flexible.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">6 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="tips">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/cuticle-care-guide.jpg" alt="Cuticle Care Guide" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Care</span>
+                                        <span class="tag">Professional</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        Professional Cuticle Care: Do's and Don'ts
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Master the art of cuticle care with professional techniques and products that keep your nail beds healthy and beautiful.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">5 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Review Posts -->
+                        <article class="blog-card" data-category="reviews">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/gel-polish-review.jpg" alt="Best Gel Polish Brands" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Review</span>
+                                        <span class="tag">Products</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        Best Gel Polish Brands: 2024 Professional Review
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        We test and review the top gel polish brands for longevity, color selection, and ease of application. Find your perfect match.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">10 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="reviews">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/nail-tools-review.jpg" alt="Essential Nail Tools" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Review</span>
+                                        <span class="tag">Tools</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        Essential Nail Tools Every Enthusiast Needs
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        From professional-grade files to precision brushes, discover the must-have tools for creating beautiful nail art at home.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">7 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="reviews">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <img src="https://i.imgur.com/nail-lamp-comparison.jpg" alt="UV LED Nail Lamp Comparison" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="mb-3">
+                                        <span class="tag">Review</span>
+                                        <span class="tag">Equipment</span>
+                                    </div>
+                                    <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">
+                                        UV vs LED Nail Lamps: Complete Comparison Guide
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                        Compare the top UV and LED nail lamps on the market. We break down features, performance, and value to help you choose.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-500">9 min read</span>
+                                        <a href="#" class="text-nail-pink font-semibold hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="py-20 bg-gradient-to-br from-nail-pink to-pink-600">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h3 class="text-3xl font-poppins font-bold text-white mb-4">Stay Updated with NailGlam</h3>
+                    <p class="text-pink-100 mb-8">
+                        Get the latest nail art trends, tutorials, and exclusive tips delivered straight to your inbox.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-3 rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-white">
+                        <button class="px-8 py-3 bg-white text-nail-pink rounded-xl hover:bg-gray-100 transition-colors duration-300 font-semibold">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-nail-pink to-nail-gold rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">NG</span>
+                        </div>
+                        <span class="text-xl font-poppins font-bold">NailGlam Studio</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Your source for professional nail art inspiration, tutorials, and expert advice.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Blog Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-nail-pink transition-colors" onclick="filterBlog('tutorials')">Tutorials</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors" onclick="filterBlog('trends')">Trends</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors" onclick="filterBlog('tips')">Tips & Care</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors" onclick="filterBlog('reviews')">Product Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-nail-pink transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-nail-pink transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-nail-pink transition-colors">Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-nail-pink transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-nail-pink transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors">Instagram</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors">Pinterest</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 NailGlam Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('darkMode', html.classList.contains('dark'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        // Blog filtering
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const blogPosts = document.querySelectorAll('.blog-card');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+                
+                // Update active button
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter blog posts
+                blogPosts.forEach(post => {
+                    if (category === 'all' || post.getAttribute('data-category') === category) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Function to filter blog from footer links
+        function filterBlog(category) {
+            const targetButton = document.querySelector(`[data-category="${category}"]`);
+            if (targetButton) {
+                targetButton.click();
+            }
+        }
+    </script>
+</body>
+</html>
