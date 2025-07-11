@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NailGlam Studio - Beautiful Nail Art Designs & Tutorials</title>
-    <meta name="description" content="Discover stunning nail art designs, summer nails, short nail ideas, and professional nail tools. Get inspired with our beauty tutorials and affiliate recommendations.">
+    <title>About Us - NailGlam Studio | Premium Nail Art Services</title>
+    <meta name="description" content="Learn about NailGlam Studio's premium nail art services, our expert team, and our commitment to beautiful, professional nail designs.">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="NailGlam Studio - Beautiful Nail Art Designs">
-    <meta property="og:description" content="Discover stunning nail art designs, summer nails, short nail ideas, and professional nail tools.">
+    <meta property="og:title" content="About NailGlam Studio - Premium Nail Art Services">
+    <meta property="og:description" content="Discover our premium nail art services, expert team, and commitment to beautiful nail designs.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://i.imgur.com/nailglam-hero.jpg">
-    <meta property="og:url" content="https://nailglam-studio.blogspot.com">
+    <meta property="og:image" content="https://i.imgur.com/nailglam-about.jpg">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NailGlam Studio - Beautiful Nail Art Designs">
-    <meta name="twitter:description" content="Discover stunning nail art designs, summer nails, short nail ideas, and professional nail tools.">
-    <meta name="twitter:image" content="https://i.imgur.com/nailglam-hero.jpg">
+    <meta name="twitter:title" content="About NailGlam Studio - Premium Nail Art Services">
+    <meta name="twitter:description" content="Discover our premium nail art services, expert team, and commitment to beautiful nail designs.">
+    <meta name="twitter:image" content="https://i.imgur.com/nailglam-about.jpg">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,6 +38,7 @@
                     colors: {
                         'nail-pink': '#EC4899',
                         'nail-light': '#F9EAF1',
+                        'nail-gold': '#F59E0B',
                     }
                 }
             }
@@ -47,50 +47,14 @@
     
     <!-- Custom Styles -->
     <style>
-        /* Custom scrollbar for webkit browsers */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #EC4899;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #be185d;
-        }
-        
-        /* Dark mode scrollbar */
-        .dark ::-webkit-scrollbar-track {
-            background: #374151;
-        }
-        .dark ::-webkit-scrollbar-thumb {
-            background: #EC4899;
-        }
-        
-        /* Smooth scroll behavior */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Intersection observer fade-in animation */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #EC4899, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
     </style>
-    <!-- ✅ Trending SEO Keywords for NailGlam Studio -->
-<meta name="keywords" content="
-summer nail designs 2025, almond nails, coffin nails, gel nail art, floral nails for women, french manicure trends, DIY manicure tips, nail kit for beginners, nail polish hacks, nail stickers USA, nail extensions, press-on nails, nail drill machine 2025, elegant nail art, chrome nails USA, nude nails for office, trending nails USA 2025
-">
-
 </head>
 
 <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
@@ -100,201 +64,207 @@ summer nail designs 2025, almond nails, coffin nails, gel nail art, floral nails
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-gradient-to-r from-nail-pink to-pink-600 rounded-full flex items-center justify-center">
+                    <div class="w-8 h-8 bg-gradient-to-r from-nail-pink to-nail-gold rounded-full flex items-center justify-center">
                         <span class="text-white font-bold text-sm">NG</span>
                     </div>
                     <h1 class="text-xl font-poppins font-bold text-nail-pink">NailGlam Studio</h1>
                 </div>
                 
-                <!-- Navigation Links -->
+                <!-- Desktop Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link text-nail-pink font-medium">Home</a>
-                    <a href="about.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">About</a>
-                    <a href="services.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Services</a>
-                    <a href="gallery.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Gallery</a>
-                    <a href="blog.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Blog</a>
-                    <a href="contact.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Contact</a>
+                    <a href="index.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-nail-pink font-medium">About</a>
+                    <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Services</a>
+                    <a href="gallery.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Gallery</a>
+                    <a href="blog.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Blog</a>
+                    <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Contact</a>
                 </div>
                 
-                <!-- Dark Mode Toggle -->
-                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300" aria-label="Toggle dark mode">
-                    <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                    </svg>
-                    <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                    </svg>
-                </button>
+                <!-- Mobile Controls -->
+                <div class="flex items-center space-x-2">
+                    <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300" aria-label="Toggle dark mode">
+                        <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuToggle" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300" aria-label="Toggle mobile menu">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden fixed inset-0 top-[73px] bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm z-40 transform translate-x-full transition-transform duration-300">
+                <div class="flex flex-col items-center justify-center h-full space-y-8">
+                    <a href="index.html" class="text-2xl font-poppins font-semibold text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-2xl font-poppins font-semibold text-nail-pink">About</a>
+                    <a href="services.html" class="text-2xl font-poppins font-semibold text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Services</a>
+                    <a href="gallery.html" class="text-2xl font-poppins font-semibold text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Gallery</a>
+                    <a href="blog.html" class="text-2xl font-poppins font-semibold text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Blog</a>
+                    <a href="contact.html" class="text-2xl font-poppins font-semibold text-gray-700 dark:text-gray-300 hover:text-nail-pink transition-colors duration-300">Contact</a>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="py-20 bg-gradient-to-br from-nail-light to-pink-50 dark:from-gray-800 dark:to-gray-900">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl md:text-6xl font-poppins font-bold text-gray-900 dark:text-white mb-6">
-                    Beautiful Nail Art<br>
-                    <span class="text-nail-pink">Designs & Tutorials</span>
-                </h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Discover stunning nail art designs, from summer vibes to elegant short nails. Get inspired and create your perfect look.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="gallery.html" class="px-8 py-3 bg-nail-pink text-white rounded-xl hover:bg-pink-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                        View Gallery
-                    </a>
-                    <a href="services.html" class="px-8 py-3 bg-white dark:bg-gray-800 text-nail-pink border-2 border-nail-pink rounded-xl hover:bg-nail-pink hover:text-white transform hover:scale-105 transition-all duration-300 shadow-lg">
-                        Our Services
-                    </a>
+        <section class="py-20 bg-gradient-to-br from-nail-light to-pink-50 dark:from-gray-800 dark:to-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-6xl font-poppins font-bold text-gray-900 dark:text-white mb-6">
+                        About <span class="gradient-text">NailGlam Studio</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                        Where artistry meets beauty, creating stunning nail designs that express your unique style.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Summer Nails Gallery -->
-        <section id="summer" class="py-20 bg-white dark:bg-gray-900">
+        <!-- Our Story Section -->
+        <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
-                        Summer Nail Designs
-                    </h2>
-                    <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                        Bright, vibrant, and perfect for the sunny season. These summer nail designs will make you shine.
-                    </p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Summer Nail Card 1 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer">
-                        <img src="https://i.imgur.com/summer-nail-1.jpg" alt="Tropical Sunset Nails" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Tropical Sunset</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Vibrant orange and pink gradient with palm tree silhouettes</p>
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-6">Our Story</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                Founded in 2018, NailGlam Studio began as a passion project by master nail artist Sarah Chen. 
+                                What started as a small home studio has grown into a premier destination for nail art enthusiasts 
+                                seeking exceptional quality and innovative designs.
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                Our journey is rooted in the belief that beautiful nails are not just an accessory—they're 
+                                a form of self-expression. Every design we create tells a story, reflects a personality, 
+                                and celebrates the unique beauty of each individual.
+                            </p>
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-2xl font-bold text-nail-pink">50K+</div>
+                                    <div class="text-sm text-gray-600 dark:text-gray-300">Happy Clients</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-nail-pink">1000+</div>
+                                    <div class="text-sm text-gray-600 dark:text-gray-300">Unique Designs</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-nail-pink">6</div>
+                                    <div class="text-sm text-gray-600 dark:text-gray-300">Years Experience</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!-- Summer Nail Card 2 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer">
-                        <img src="https://i.imgur.com/summer-nail-2.jpg" alt="Ocean Waves Nails" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Ocean Waves</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Cool blue tones with white wave patterns and shell accents</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Summer Nail Card 3 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer">
-                        <img src="https://i.imgur.com/summer-nail-3.jpg" alt="Fruit Punch Nails" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Fruit Punch</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Bright watermelon, lemon, and cherry designs that pop</p>
+                        <div class="relative">
+                            <img src="https://i.imgur.com/nailglam-story.jpg" alt="NailGlam Studio Story" class="w-full h-96 object-cover rounded-2xl shadow-xl">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Short Nails Gallery -->
-        <section id="short" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <!-- Our Mission Section -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
-                        Short Nail Elegance
-                    </h2>
-                    <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                        Sophisticated and chic designs perfect for shorter nails. Prove that elegance comes in all lengths.
+                <div class="max-w-4xl mx-auto text-center">
+                    <h3 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-8">Our Mission</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-12">
+                        To empower individuals through the art of nail design, creating beautiful, confidence-boosting 
+                        experiences that celebrate personal style and creativity.
                     </p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Short Nail Card 1 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer">
-                        <img src="https://i.imgur.com/short-nail-1.jpg" alt="Minimalist Dots" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Minimalist Dots</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Clean white base with delicate gold dot patterns</p>
-                        </div>
-                    </div>
                     
-                    <!-- Short Nail Card 2 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer">
-                        <img src="https://i.imgur.com/short-nail-2.jpg" alt="Pastel French Tips" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Pastel French Tips</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Modern twist on classic French with soft pastel colors</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-nail-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Innovation</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Constantly pushing the boundaries of nail art with new techniques and trends.</p>
                         </div>
-                    </div>
-                    
-                    <!-- Short Nail Card 3 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer">
-                        <img src="https://i.imgur.com/short-nail-3.jpg" alt="Geometric Lines" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Geometric Lines</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Bold black lines creating modern geometric patterns</p>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-nail-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Quality</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Using only premium products and maintaining the highest standards of excellence.</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-nail-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Community</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Building a supportive community of nail art enthusiasts and professionals.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Affiliate Tools Section -->
-        <section id="tools" class="py-20 bg-white dark:bg-gray-900">
+        <!-- Team Section -->
+        <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
-                        Professional Nail Tools
-                    </h2>
-                    <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                        Get professional results with these high-quality nail tools. Recommended by nail artists worldwide.
-                    </p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Tool 1 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
-                        <img src="https://i.imgur.com/nail-tool-1.jpg" alt="Professional Nail Lamp" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">UV/LED Nail Lamp</h4>
-                            <p class="text-gray-600 dark:text-gray-300 mb-4">Professional 48W lamp for perfect gel curing every time</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-2xl font-bold text-nail-pink">$39.99</span>
-                                <a href="https://amazon.com/nail-lamp-professional" target="_blank" rel="nofollow noopener"
-                                   class="inline-block px-4 py-2 bg-nail-pink text-white rounded-lg hover:bg-pink-600 transition-colors duration-300">
-                                    Buy Now
-                                </a>
-                            </div>
-                        </div>
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h3 class="text-3xl font-poppins font-bold text-gray-900 dark:text-white mb-4">Meet Our Team</h3>
+                        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                            Our talented team of nail artists brings years of experience and endless creativity to every appointment.
+                        </p>
                     </div>
                     
-                    <!-- Tool 2 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
-                        <img src="https://i.imgur.com/nail-tool-2.jpg" alt="Nail Art Brush Set" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Nail Art Brush Set</h4>
-                            <p class="text-gray-600 dark:text-gray-300 mb-4">15-piece precision brush set for detailed nail art designs</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-2xl font-bold text-nail-pink">$24.99</span>
-                                <a href="https://amazon.com/nail-art-brush-set" target="_blank" rel="nofollow noopener"
-                                   class="inline-block px-4 py-2 bg-nail-pink text-white rounded-lg hover:bg-pink-600 transition-colors duration-300">
-                                    Buy Now
-                                </a>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Team Member 1 -->
+                        <div class="text-center">
+                            <div class="relative mb-6">
+                                <img src="https://i.imgur.com/team-sarah.jpg" alt="Sarah Chen - Founder & Master Nail Artist" class="w-48 h-48 rounded-full mx-auto object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-nail-pink/20 rounded-full"></div>
                             </div>
+                            <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Sarah Chen</h4>
+                            <p class="text-nail-pink font-medium mb-3">Founder & Master Nail Artist</p>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                Award-winning nail artist with 8+ years of experience. Specializes in intricate designs and nail art education.
+                            </p>
                         </div>
-                    </div>
-                    
-                    <!-- Tool 3 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
-                        <img src="https://i.imgur.com/nail-tool-3.jpg" alt="Cuticle Care Kit" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Cuticle Care Kit</h4>
-                            <p class="text-gray-600 dark:text-gray-300 mb-4">Complete kit with pusher, nipper, and nourishing oil</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-2xl font-bold text-nail-pink">$19.99</span>
-                                <a href="https://amazon.com/cuticle-care-kit" target="_blank" rel="nofollow noopener"
-                                   class="inline-block px-4 py-2 bg-nail-pink text-white rounded-lg hover:bg-pink-600 transition-colors duration-300">
-                                    Buy Now
-                                </a>
+                        
+                        <!-- Team Member 2 -->
+                        <div class="text-center">
+                            <div class="relative mb-6">
+                                <img src="https://i.imgur.com/team-maria.jpg" alt="Maria Rodriguez - Senior Nail Artist" class="w-48 h-48 rounded-full mx-auto object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-nail-pink/20 rounded-full"></div>
                             </div>
+                            <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Maria Rodriguez</h4>
+                            <p class="text-nail-pink font-medium mb-3">Senior Nail Artist</p>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                Expert in gel extensions and sculptural nail art. Known for her precision and attention to detail.
+                            </p>
+                        </div>
+                        
+                        <!-- Team Member 3 -->
+                        <div class="text-center">
+                            <div class="relative mb-6">
+                                <img src="https://i.imgur.com/team-alex.jpg" alt="Alex Kim - Creative Director" class="w-48 h-48 rounded-full mx-auto object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-nail-pink/20 rounded-full"></div>
+                            </div>
+                            <h4 class="text-xl font-poppins font-semibold text-gray-900 dark:text-white mb-2">Alex Kim</h4>
+                            <p class="text-nail-pink font-medium mb-3">Creative Director</p>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                Trend forecaster and design innovator. Creates seasonal collections and teaches advanced techniques.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -303,167 +273,95 @@ summer nail designs 2025, almond nails, coffin nails, gel nail art, floral nails
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 dark:bg-gray-800 py-12">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
-            <div class="text-center">
-                <div class="flex items-center justify-center space-x-2 mb-4">
-                    <div class="w-8 h-8 bg-gradient-to-r from-nail-pink to-pink-600 rounded-full flex items-center justify-center">
-                        <span class="text-white font-bold text-sm">NG</span>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-nail-pink to-nail-gold rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">NG</span>
+                        </div>
+                        <span class="text-xl font-poppins font-bold">NailGlam Studio</span>
                     </div>
-                    <h3 class="text-xl font-poppins font-bold text-nail-pink">NailGlam Studio</h3>
+                    <p class="text-gray-400">
+                        Premium nail art services with a focus on creativity, quality, and customer satisfaction.
+                    </p>
                 </div>
-                <p class="text-gray-600 dark:text-gray-300 mb-4">
-                    Your destination for beautiful nail art inspiration and professional tools.
-                </p>
-                <!-- AdSense Hook -->
-                <!-- AdSense here -->
-                <p class="text-sm text-gray-500 dark:text-gray-400">
-                    © 2025 NailGlam Studio. All rights reserved. | 
-                    <a href="#" class="hover:text-nail-pink transition-colors duration-300">Privacy Policy</a> | 
-                    <a href="#" class="hover:text-nail-pink transition-colors duration-300">Terms of Service</a>
-                </p>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-nail-pink transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-nail-pink transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-nail-pink transition-colors">Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-nail-pink transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html#manicure" class="hover:text-nail-pink transition-colors">Manicure</a></li>
+                        <li><a href="services.html#pedicure" class="hover:text-nail-pink transition-colors">Pedicure</a></li>
+                        <li><a href="services.html#nail-art" class="hover:text-nail-pink transition-colors">Nail Art</a></li>
+                        <li><a href="services.html#extensions" class="hover:text-nail-pink transition-colors">Extensions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="blog.html" class="hover:text-nail-pink transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-nail-pink transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors">Instagram</a></li>
+                        <li><a href="#" class="hover:text-nail-pink transition-colors">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 NailGlam Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        // Dark Mode Toggle
+        // Dark mode toggle
         const darkModeToggle = document.getElementById('darkModeToggle');
         const html = document.documentElement;
-        
-        // Check for saved theme preference or default to light mode
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            html.classList.toggle('dark', savedTheme === 'dark');
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            html.classList.add('dark');
-        }
-        
+
         darkModeToggle.addEventListener('click', () => {
             html.classList.toggle('dark');
-            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+            localStorage.setItem('darkMode', html.classList.contains('dark'));
         });
-        
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-        
-        // Navigation scroll spy
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        function updateActiveNav() {
-            const scrollY = window.scrollY + 100;
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-                const sectionId = section.getAttribute('id');
-                
-                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                    navLinks.forEach(link => {
-                        link.classList.remove('text-nail-pink');
-                        link.classList.add('text-gray-700', 'dark:text-gray-300');
-                    });
-                    
-                    const activeLink = document.querySelector(`a[href="#${sectionId}"]`);
-                    if (activeLink) {
-                        activeLink.classList.add('text-nail-pink');
-                        activeLink.classList.remove('text-gray-700', 'dark:text-gray-300');
-                    }
-                }
-            });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            html.classList.add('dark');
         }
-        
-        window.addEventListener('scroll', updateActiveNav);
-        
-        /* Optional: Intersection Observer for fade-in animations
-        // Uncomment the code below to enable animated entry with IntersectionObserver
-        
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-        
-        // Add fade-in class to elements you want to animate
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
         });
-        */
+
+        // Close mobile menu when clicking on a link
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                mobileMenu.classList.add('translate-x-full');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenu.classList.add('translate-x-full');
+            }
+        });
     </script>
-    
-    <!--
-    ======================================
-    READY-MADE BLOCKS FOR CONTENT CREATION
-    ======================================
-    
-    COPY THIS BLOCK INTO NEW POSTS - Gallery Card Template:
-    
-    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer">
-        <img src="https://i.imgur.com/your-image.jpg" alt="Your Alt Text" class="w-full h-48 object-cover" loading="lazy">
-        <div class="p-6">
-            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Your Title Here</h4>
-            <p class="text-gray-600 dark:text-gray-300">Your description here - keep it concise and engaging</p>
-        </div>
-    </div>
-    
-    COPY THIS BLOCK INTO NEW POSTS - Affiliate Product Card:
-    
-    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
-        <img src="https://i.imgur.com/your-product-image.jpg" alt="Product Name" class="w-full h-48 object-cover" loading="lazy">
-        <div class="p-6">
-            <h4 class="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-2">Product Name</h4>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">Brief product description highlighting key benefits</p>
-            <div class="flex items-center justify-between">
-                <span class="text-2xl font-bold text-nail-pink">$XX.XX</span>
-                <a href="https://amazon.com/your-affiliate-link" target="_blank" rel="nofollow noopener"
-                   class="inline-block px-4 py-2 bg-nail-pink text-white rounded-lg hover:bg-pink-600 transition-colors duration-300">
-                    Buy Now
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    BLOGGER POST HTML PAYLOAD EXAMPLE:
-    
-    <div class="container mx-auto px-4 py-8">
-        <article class="max-w-4xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 dark:text-white mb-6">Your Post Title</h1>
-            
-            <div class="prose dark:prose-invert max-w-none">
-                <p class="text-gray-600 dark:text-gray-300 mb-6">Your post content goes here...</p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                    <!-- Use the gallery card template above -->
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 mb-6">More content...</p>
-                
-                <!-- Use affiliate product card template if needed -->
-            </div>
-        </article>
-    </div>
-    
-    ======================================
-    -->
 </body>
 </html>
